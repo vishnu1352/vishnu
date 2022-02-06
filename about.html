@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>document</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="sub-header">
+                        <nav>
+                            <a href="index.html"><img src="images/logo.png"></a>
+                            <div class="nav-links" id="navlinks">
+                                <img class="img" onclick="hidemenu()" src="https://img.icons8.com/ios-filled/50/000000/x.png"/>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="course.html">Course</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <img class="img" onclick="showmenu()" src="https://img.icons8.com/ios-glyphs/50/000000/menu.png"/>
+                        </nav>
+          
+              <h1>About Us</h1>
+
+        </section>
+
+        <!------------about us content-------------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are worlds largest university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi, quae natus quis itaque sunt nostrum. Eligendi fugiat ut excepturi sunt ab explicabo, voluptates exercitationem ex tempore harum magni iste!</p>
+            <a href="" class="hero-btn red-btn">Explore now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+   <!------------------Footer-------------->
+
+   <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iste, expedita quaerat incidunt dolor quae voluptatibus dolores dolore<br> quos quia debitis adipisci aliquam magnam placeat quas minus, laboriosam, nulla assumenda.</p>
+
+        <div class="icons">
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+        </div>
+        <p>Made with<img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png"/>by Vishnuvardhan</p>
+
+   </section>
+
+
+        <script>
+            var navlinks=document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right="0";
+               
+            }
+
+            function hidemenu(){
+                navlinks.style.right="-200px";
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>document</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="sub-header">
+                        <nav>
+                            <a href="index.html"><img src="images/logo.png"></a>
+                            <div class="nav-links" id="navlinks">
+                                <img class="img" onclick="hidemenu()" src="https://img.icons8.com/ios-filled/50/000000/x.png"/>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="course.html">Course</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <img class="img" onclick="showmenu()" src="https://img.icons8.com/ios-glyphs/50/000000/menu.png"/>
+                        </nav>
+          
+              <h1>Our Certificate & Online Programs For 2021</h1>
+
+        </section>
+
+        <!------blog page content----------->
+
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg" alt="">
+                    <h2>Our Certificate & Online Programs For 2021</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nesciunt provident quod, facere repellendus doloremque perferendis recusandae pariatur sequi, impedit possimus id blanditiis expedita quas iste, accusantium excepturi sunt repellat?</p>
+                    <br> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique ea a? Error ab porro deleniti itaque, dolorum saepe alias modi, quas quidem sunt quod distinctio! Totam fuga eligendi corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dicta eveniet neque delectus obcaecati facere sequi porro minus veritatis illum sed nisi adipisci repellat voluptates iste reiciendis quibusdam, veniam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione veritatis nemo, expedita dignissimos nostrum magnam iusto aut voluptatem totam porro sequi quidem tenetur dicta! Asperiores ut corrupti nesciunt. Nostrum!
+                    </p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo voluptate quam rerum totam illum et, magnam quaerat similique iste qui ratione explicabo doloremque possimus maiores deleniti consequatur adipisci sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam natus. Laboriosam, doloremque excepturi velit dolores unde delectus dolorem natus aspernatur, voluptas culpa, tempore magnam nesciunt maxime nulla cumque?</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form" action="">
+                                <input type="text" placeholder="Enter your name">
+                                <input type="email" placeholder="Enter your email">
+                                <textarea name="" id=""  rows="5" placeholder="your comment"></textarea>
+                                <button type="submit" class="hero-btn red-btn">Post comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+
+                    <div>
+                        <span>Auto CAD</span>
+                        <span>42</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+   <!------------------Footer-------------->
+
+   <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iste, expedita quaerat incidunt dolor quae voluptatibus dolores dolore<br> quos quia debitis adipisci aliquam magnam placeat quas minus, laboriosam, nulla assumenda.</p>
+
+        <div class="icons">
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+        </div>
+        <p>Made with<img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png"/>by Vishnuvardhan</p>
+
+   </section>
+
+
+        <script>
+            var navlinks=document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right="0";
+               
+            }
+
+            function hidemenu(){
+                navlinks.style.right="-200px";
+
+            }
+        </script>
+    </body>
+</html>

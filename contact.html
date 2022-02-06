@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>document</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="sub-header">
+                        <nav>
+                            <a href="index.html"><img src="images/logo.png"></a>
+                            <div class="nav-links" id="navlinks">
+                                <img class="img" onclick="hidemenu()" src="https://img.icons8.com/ios-filled/50/000000/x.png"/>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="course.html">Course</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <img class="img" onclick="showmenu()" src="https://img.icons8.com/ios-glyphs/50/000000/menu.png"/>
+                        </nav>
+          
+              <h1>Contact Us</h1>
+
+        </section>
+
+        <!------------contact us content-------------->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.5060726882552!2d79.99040850015237!3d14.455605084439906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8cb0b0ca2f3b%3A0x242b5114071f548e!2sStonehouse%20Pet%2C%20Nellore%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1636240621441!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/home.png"/>
+                        <span>
+                            <h5>XYZ Road, ABC Bulding</h5>
+                            <p>Nellore, AndhraPradesh</p>
+                        </span>
+                    </div>
+                
+               
+                    <div>
+                         <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"/>
+                         <span>
+                         <h5>+91 9989205550</h5>
+                         <p>Monday to Saturday, 9:30 to 7pm</p>
+                        </span>
+                    </div>
+               
+
+                
+                    <div>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/filled-message.png"/>
+                      <span>
+                        <h5>info@tsssolutions.com</h5>
+                        <p>Email us your queries</p>
+                    </span>
+                    </div>
+                </div>
+
+
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                            <input type="text" placeholder="Enter your name" name="name" required>
+
+                            <input type="email" name="email" placeholder="Enter email address" required>
+
+                            <input type="text" name="subject" placeholder="Enter your subject" required>
+
+                            <textarea name="message" id=""  rows="8" placeholder="Message" required></textarea>
+
+                            <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+   <!------------------Footer-------------->
+
+   <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iste, expedita quaerat incidunt dolor quae voluptatibus dolores dolore<br> quos quia debitis adipisci aliquam magnam placeat quas minus, laboriosam, nulla assumenda.</p>
+
+        <div class="icons">
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+        </div>
+        <p>Made with<img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png"/>by Vishnuvardhan</p>
+
+   </section>
+
+
+        <script>
+            var navlinks=document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right="0";
+               
+            }
+
+            function hidemenu(){
+                navlinks.style.right="-200px";
+
+            }
+        </script>
+    </body>
+</html>
